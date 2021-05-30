@@ -1,5 +1,7 @@
 # MemberOrder
 
+Lets you change the inspector order of all members inside a class.
+
 ### Requires [Odin Inspector](https://odininspector.com/)
 
 ### Examples
@@ -41,4 +43,8 @@ and start using the attribute as in the example file.
 You can move the files, but make sure that `MemberOrderAttribute.cs`
 is not in an editor folder or it will be removed during build, causing errors.
 
-Both the order and the member name can be provided via [ValueResolvers](https://odininspector.com/documentation/sirenix.odininspector.editor.valueresolvers.valueresolver-1)
+Both the order and the member name can be provided via [ValueResolvers].  
+Each member has to be on a seperate line to work, this limitation can technically be removed  
+but it would be more work and would hurt readability so i didn't bother.
+
+[ValueResolvers]: https://odininspector.com/documentation/sirenix.odininspector.editor.valueresolvers.valueresolver-1
